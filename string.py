@@ -126,5 +126,11 @@ print(k.isalnum())
 l="This is my Laptop"
 print(l.replace("Laptop","Mobile"))
 
+##length and count starts with 1
+
+
+
+
+
 
 
