@@ -128,6 +128,9 @@ print(l.replace("Laptop","Mobile"))
 
 ##length and count starts with 1
 
+print(l.startswith("That"))
+print(l.endswith("p"))
+
 
 
 
