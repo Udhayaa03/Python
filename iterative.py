@@ -167,8 +167,8 @@ a=int(input("Enter a Row Number: "))
 b=int(input("Enter a Seat Number: "))
 
 for row in range(1,4):  
-    if a>4 or b>=4:
-        print("Please check that you entered a valid row(1-3) and seat(1-4) number")
+    if a>3 or b>4:
+        print("Please check that you've entered a valid row(1-3) and seat(1-4) number")
         break
     print("\nRow-",row,end=": \n")
     
@@ -180,9 +180,10 @@ for row in range(1,4):
                 print("Available")
 '''
 #-------------------------------------------------------------------------------------------
+'''
 c=[]
 d=[]
-for i in range(0,2):
+for i in range(0,3):
     a=int(input("\nEnter a Row Number: "))
     b=int(input("Enter a Seat Number: "))
 
@@ -205,7 +206,7 @@ for i in range(0,2):
     c.append(a)
     d.append(b)
 
-                
+'''            
 
                 
 #------------------------------------------------------------------------------------------
@@ -222,8 +223,37 @@ for i in range(1,4):
     
     
 '''
-    
+#-------------------------------------------------------------------------------------------
+'''
+break-terminate the loop
+continue-skip the loop
+pass-acts as a placeholder
 
+'''
+'''
+for i in range(61):
+    if i%3==0 and i%5==0:
+        continue
+    print(i)
+'''
+#-------------------------------------------------------------------------------------------
+'''
+for i in range(10):
+    if i==5:
+        print(i)
+        break
+    else:
+        print(i)
+'''
+#-------------------------------------------------------------------------------------------
+'''
+for i in range(10):
+    pass
+'''
+#-------------------------------------------------------------------------------------------
 
-
-    
+a="udhaya@gmail.com","viswa@gmail.com","udhaya@proton.me","udhayaaa@gmail.in"
+for i in a:
+    if i.endswith(".com"):
+        continue
+    print(i)
