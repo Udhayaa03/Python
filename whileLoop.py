@@ -98,65 +98,80 @@ else:
     print("Locked")
 '''
 #Task1-------------------------------------------------------------------------------------------
-
+'''
 PIN=1234
 OTP=9876
 total=10000
-
+check=4
 attempts=3
 while attempts>=1:
-    a=int(input("Enter PIN:"))
+    a=int(input("\nEnter PIN:"))
+    
     if a==PIN:
         print("\nPIN is Correct")
-        print("\n1.Balance Enquiry \n2.Deposit \n3.Withdraw")
-        b=int(input("Enter an Option: "))
+        
+        while check>=1:
+            print("\n1.Balance Enquiry \n2.Deposit \n3.Withdraw")
+            b=int(input("Enter an Option: "))
 
-        if b==1:
-            print("\t\t\t\t Balance Enquiry\n")
-            c=int(input("Enter OTP: "))
-            if c==OTP:
-                print("OTP Verified")
-                print(f"\nYour Balance is {total}")
-            else:
-                print("Wrong OTP")
-                
-        elif b==2:
-            print("\t\t\t\t Deposit\n")
-            c=int(input("Enter OTP: "))
-            if c==OTP:
-                print("OTP Verified")
-                amt=int(input("\nEnter an Amount to Deposit: "))
-                total=total+amt
-                print(f"\nDeposited Amount: {amt} \nBalance: {total}")
-            else:
-                print("Wrong OTP")
-
-        elif b==3:
-            print("\t\t\t\t Withdraw\n")
-            c=int(input("Enter OTP: "))
-            if c==OTP:
-                print("OTP Verified")
-                withdraw=int(input("Enter an amount to withdraw: "))
-                if withdraw<=total:
-                    amt=total-withdraw
-                    print("\nCollect Your Payment.\nYour Balance amount is: ",amt)
+            if b==1:
+                print("\t\t\t Balance Enquiry\n")
+                c=int(input("Enter OTP: "))
+                if c==OTP:
+                    print("OTP Verified")
+                    print(f"\nYour Balance is {total}")
                 else:
-                    print("\nInsufficient Fund !..Your balance is: ",total)
-            else:
-                print("Wrong OTP")
+                    print("Wrong OTP")
+                    break
                 
-##        if a==PIN and c==OTP and b==1 or b==2 or b==3:
-##            break
+            elif b==2:
+                print("\t\t\t Deposit\n")
+                c=int(input("Enter OTP: "))
+                if c==OTP:
+                    print("OTP Verified")
+                    amt=int(input("\nEnter an Amount to Deposit: "))
+                    total=total+amt
+                    print(f"\nDeposited Amount: {amt} \nBalance: {total}")
+                else:
+                    print("Wrong OTP")
+                    break
+
+            elif b==3:
+                print("\t\t\t Withdraw\n")
+                c=int(input("Enter OTP: "))
+                if c==OTP:
+                    print("OTP Verified")
+                    withdraw=int(input("Enter an amount to withdraw: "))
+                    if withdraw<=total:
+                        total=total-withdraw
+                        print("\nCollect Your Payment.\nYour Balance amount is: ",total)
+                    else:
+                        print("\nInsufficient Fund !..Your balance is: ",total)
+                        break
+                else:
+                    print("Wrong OTP")
+                    break
+            else:
+                print("\nInvalid Option")
+            check-=1
+                
       
-    else:
-        attempts-=1 
-        print(f"Incorrect PIN...{attempts} times left")
+    else:  
+        attempts-=1
+        print(f"Incorrect PIN...{attempts} attempts left")
 
     
 else:
     print("Invalid Attempts .....Locked !")
-    
-        
+''' 
+#-------------------------------------------------------------------------------------------
+
+#factorial using for
+n=int(input("Enter a Value: "))
+fact=1
+for i in range(1,n+1):
+    fact*=i
+print(f"Factorial of {n} is {fact}")
 
 
 
