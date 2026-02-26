@@ -85,15 +85,6 @@ else:
 '''
 
 
-#-----------------------------------------------------------------------------------------
-
-#age 25 irunthu la 35 irunthu salary 35 k mela irunthu -premium credit card ku eligible nu varanum.........age 36 mela  50 kulla iruntha salary 20 k ku mela iruntha eligible for credit card............age 25 kela 50 ke mela aprm salary 20k ku keela iruntha ethukum eligible kedaiyathu
-
-#user input vanganum ...1st letter caps aa irukanum next vanthu 6 characters mela irukanum last character vanthu * irukanum ...ipdi iruntha you entered string password nu print aaganum...otherwisw week password nu print aaganum(nested if)
-
-# user enna koduthalum athu reverse la print aaganum
-
-
 
 #Task 1-----------------------------------------------------------------------------------------
 '''

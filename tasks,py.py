@@ -77,6 +77,7 @@ while attempts>=1:
                         print("\nCollect Your Payment.\nYour Balance amount is: ",total)
                     else:
                         print("\nInsufficient Fund !..Your balance is: ",total)
+                        break
                 else:
                     print("Wrong OTP")
                     break
@@ -93,5 +94,9 @@ while attempts>=1:
 else:
     print("Invalid Attempts .....Locked !")
     
-        
+
+
+
+        a=a+1
+    
 
